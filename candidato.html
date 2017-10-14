@@ -1,4 +1,16 @@
-var w = 400, h = 200, p = 70;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+</head>
+<body>
+  <div id="vis">
+  </div>
+  <script>
+   var w = 400, h = 200, p = 70;
 var v=[
   {'candidato':'cristina', 'seguidores':5163060}, 
   {'candidato':'esteban', 'seguidores':550250}, 
@@ -44,3 +56,8 @@ svg.selectAll("text.seguidores").data(v).enter()
   .attr("y", function(d,i) { return (i*dy)+30;})
   .text( function(d,i){return i+1+". "+d.seguidores;} 
    );
+    
+  </script>
+  
+</body>
+</html>
